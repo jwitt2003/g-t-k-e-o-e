@@ -32,3 +32,27 @@
 </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Form</title>
+</head>
+<body>
+
+<h1>Contact Us</h1>
+
+<!-- Accessible Form with ARIA Labels -->
+<form action="/submit-form" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" aria-required="true">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" aria-required="true">
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
